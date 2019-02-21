@@ -31,4 +31,11 @@ h1{
 
 .pImg{
     width:100%;
+    overflow:hidden;
+    margin:0; 
+}
+.pImg img{
+    display:block;
+    width:100%;
+    margin:-102.25% 0 -27.75%;
 }

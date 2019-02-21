@@ -9,7 +9,7 @@ html, body {
     height: 100%;
 }
 body {
-    background: #eee;
+    background: #ffffff;
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
     font-size: 14px;
     color:#000;
@@ -23,6 +23,7 @@ body {
 
 .swiper-wrapper{
     width:100%;
+    border: 1px solid blue;
 }
 
 .swiper-slide {
@@ -44,19 +45,29 @@ body {
     align-items: center;
 }
 
+.swiper-button-next {
+    border: solid black 1px;
+    background-color: grey;
+}
+
+.swiper-button-prev{
+    border: solid black 1px;
+    background-color: grey;
+}
+
 .container{
     background-color: #DDDDDD;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0 20px 0 20px;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
 }
 
 header{
     text-align: left;
     font-size: 2em;
     padding: 30px 0 10px 30px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 footer{
@@ -65,12 +76,12 @@ footer{
 
 .gallery{
     display:flex;
-    border: 1px solid green;
+    /* border: 1px solid green; */
 }
 
 .item{
     flex:1;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 .form{

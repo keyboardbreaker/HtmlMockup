@@ -1,11 +1,20 @@
-.container{
-    background-color: grey;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-h1{
+.container{
+    background-color: #DDDDDD;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 20px 0 20px;
+}
+
+header{
     text-align: left;
+    font-size: 2em;
+    padding: 30px 0 10px 30px;
 }
 
 .gallery{

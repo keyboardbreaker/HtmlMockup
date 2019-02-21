@@ -21,7 +21,9 @@ Form on the page should be completed by users in two steps. Clicking "Next" will
 5. Find a use for one CSS3 transition.
 6. The only allowed 3-rd party code libraries are jQuery and Swiper. (no bootstrap, formwizards, etc.)
 
+# What I learned
 
+[css cropping height](https://medium.com/@elad/how-to-crop-images-with-css-b8471d402b16)
 
 
 

@@ -25,5 +25,5 @@ Form on the page should be completed by users in two steps. Clicking "Next" will
 
 [css cropping height](https://medium.com/@elad/how-to-crop-images-with-css-b8471d402b16)
 
-
+[swiper.js](http://idangero.us/swiper/demos/)
 

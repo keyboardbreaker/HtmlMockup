@@ -1,16 +1,23 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-        <link rel="stylesheet" href="./styles.css">
+        <link rel="stylesheet" href="./styles/styles.css">
+        <link rel="stylesheet" href="./styles/swiper.min.css">
     </head>
     <body>
         <div class="container">
             <header>Page Title</header>
-            <div class="gallery">
-                <div class="item"><img src="assets/box1.jpg" alt=""></div>
-                <div class="item" ><img src="assets/box2.jpg" alt=""></div>
-                <div class="item"><img src="assets/box3.jpg" alt=""></div>    
+            <!-- Swiper -->
+            <div class="swiper-container">
+                <div class="swiper-wrapper gallery">
+                    <div class="swiper-slide"><div class="item"><img src="assets/box1.jpg" alt=""></div></div>
+                    <div class="swiper-slide"><div class="item"><img src="assets/box2.jpg" alt=""></div></div>
+                    <div class="swiper-slide"><div class="item"><img src="assets/box3.jpg" alt=""></div></div>
+                    <div class="swiper-slide"><div class="item"><img src="assets/box4.jpg" alt=""></div></div>
+                </div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
             </div>
             <hr>
             <div class="main">
@@ -24,5 +31,17 @@
             <hr>
             <p class="footer">Page footer</p>
         </div>
+        <script type="text/javascript" src="./scripts/swiper.min.js"></script>
+        <script>
+            var swiper = new Swiper('.swiper-container', {
+
+                slidesPerView: 3,
+                spaceBetween: 30,
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
+        </script>
     </body>
 </html>

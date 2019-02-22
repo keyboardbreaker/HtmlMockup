@@ -52,12 +52,15 @@ body {
     height: 100px;
 }
 
+hr{
+    margin:40px 5% 0 5%;
+}
+
 .container{
     background-color: #DDDDDD;
-    text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0 20px 0 20px;
-    /* border: 1px solid blue; */
+    text-align: center;
 }
 
 header{
@@ -73,12 +76,10 @@ footer{
 
 .gallery{
     display:flex;
-    /* border: 1px solid green; */
 }
 
 .item{
     flex:1;
-    /* border: 1px solid black; */
 }
 
 .form{
@@ -87,7 +88,8 @@ footer{
 
 .main{
     display:flex;
-    padding:30px;
+    width: 90%;
+    margin: 11px 5% 0 5%;
 }
 
 .column{

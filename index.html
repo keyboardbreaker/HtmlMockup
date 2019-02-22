@@ -25,13 +25,33 @@
                     <img src="assets/puzzle.jpg" alt="">
                 </div>
                 <div class="column">
-                    <div class="form">FORM</div>
+                    <div><button class="back">Step 1</button> <button class="next">Step 2</button></div>
+                    <hr>
+                    <div class="form form1">
+                        <label>First name:</label>
+                        <input>
+                        <br>
+                        <label>Last name:</label>
+                        <input>
+                        <br>
+                        <button class="next">Next</button>
+                    </div>
+                    <div class="form form2">
+                        <label>Telephone number:</label>
+                        <input>
+                        <br>
+                        <label>Email:</label>
+                        <input>
+                        <br>
+                        <button class="next">Next</button>
+                    </div>
                 </div>
             </div>
             <hr>
             <footer>Page footer</footer>
         </div>
         <script type="text/javascript" src="./scripts/swiper.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
         <script>
             var swiper = new Swiper('.swiper-container', {
                 slidesPerView: 3,
@@ -41,6 +61,17 @@
                     prevEl: '.swiper-button-prev',
                 },
             });
+
+            $(".form2").hide();
+            $(".next").click(function(){
+                $(".form1").hide();
+                $(".form2").show();
+            });
+            $(".back").click(function(){
+                $(".form1").show();
+                $(".form2").hide();
+            });
+
         </script>
     </body>
 </html>

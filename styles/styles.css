@@ -90,11 +90,15 @@ footer{
     width: 90%;
     margin: 11px 5% 0 5%;
     flex-flow:wrap;
+    /* justify-content: space-between; */
 }
 
 .column{
     flex:1;
     flex-basis: 400px;
+    flex-direction:row;
+    width: 90%;
+    /* margin: 0px 0 0 10px;  */
 }
 
 .pImg{

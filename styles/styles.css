@@ -23,7 +23,6 @@ body {
 
 .swiper-wrapper{
     width:100%;
-    border: 1px solid blue;
 }
 
 .swiper-slide {
@@ -90,10 +89,12 @@ footer{
     display:flex;
     width: 90%;
     margin: 11px 5% 0 5%;
+    flex-flow:wrap;
 }
 
 .column{
     flex:1;
+    flex-basis: 400px;
 }
 
 .pImg{

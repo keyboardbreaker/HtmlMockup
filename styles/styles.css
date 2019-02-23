@@ -89,18 +89,25 @@ hr{
     width: 90%;
     margin: 11px 5% 0 5%;
     flex-flow:wrap;
-    /* justify-content: space-between; */
+    justify-content: space-between;
 }
 
 .column{
-    flex:1;
-    flex-basis: 400px;
+    flex: 1 1 45%;
     flex-direction:row;
-    width: 90%;
-    /* margin: 0px 0 0 10px;  */
+    margin: 0px 0 0 10px; 
+}
+
+@media only screen and (max-width: 768px) { 
+    .column{
+        width: 100%;
+        margin: 10px 0 0 0;
+        flex: 1 1 100%;
+    }
 }
 
 .pImg{
+    position:relative;
     width:100%;
     overflow:hidden;
     margin:0; 

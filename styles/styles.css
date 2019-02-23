@@ -125,13 +125,7 @@ hr{
     background-color:rgba(0, 0, 0, 0.5);
     color: white;
     position: absolute;
-    bottom: -140px;
     box-sizing: border-box;
-    overflow: hidden;
-    transition: bottom 1s ease;
-}
-
-.pImg:hover .overlay{
     bottom:0;
 }
 

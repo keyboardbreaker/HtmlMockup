@@ -132,3 +132,20 @@ hr{
 footer{
     font-size: 1.5em;
 }
+
+input[type=text]{
+	background-color: #f2f2f2;
+    border:1px solid #ccc;
+	-webkit-transition: all .2s ease-out;
+	-moz-transition: all .2s ease-out;
+	-ms-transition: all .2s ease-out;
+	-o-transition: all .2s ease-out;
+	transition: all .2s ease-out
+}
+
+input[type=text]:focus {
+	border-color: #777;
+	color: #000;
+	background: #fff;
+	outline: 0
+}

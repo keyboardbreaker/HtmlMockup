@@ -112,6 +112,7 @@ hr{
     overflow:hidden;
     margin:0; 
 }
+
 .pImg img{
     display:block;
     width:100%;
@@ -124,7 +125,14 @@ hr{
     background-color:rgba(0, 0, 0, 0.5);
     color: white;
     position: absolute;
-    bottom: 0px;
+    bottom: -140px;
+    box-sizing: border-box;
+    overflow: hidden;
+    transition: bottom 1s ease;
+}
+
+.pImg:hover .overlay{
+    bottom:0;
 }
 
 footer{

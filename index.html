@@ -8,15 +8,13 @@
     <body>
         <div class="container">
             <header>Page Title</header>
-            <!-- Swiper -->
-            <div class="swiper-container">
+            <div class="swiper-container desktop-swiper-container-horizontal">
                 <div class="swiper-wrapper gallery">
                     <div class="swiper-slide"><div class="item"><img src="assets/box4.jpg" alt=""></div></div>
                     <div class="swiper-slide"><div class="item"><img src="assets/box3.jpg" alt=""></div></div>
                     <div class="swiper-slide"><div class="item"><img src="assets/box2.jpg" alt=""></div></div>
                     <div class="swiper-slide"><div class="item"><img src="assets/box1.jpg" alt=""></div></div>
                 </div>
-                <!-- Add Arrows -->
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
             </div>
@@ -64,15 +62,6 @@
         <script type="text/javascript" src="./scripts/swiper.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
         <script>
-            var swiper = new Swiper('.swiper-container', {
-                slidesPerView: 3,
-                spaceBetween: 30,
-                navigation: {
-                    nextEl: '.swiper-button-next',
-                    prevEl: '.swiper-button-prev',
-                },
-            });
-
             $(".form2").hide();
             $(".next").click(function(){
                 $(".form1").hide();
@@ -83,6 +72,22 @@
                 $(".form2").hide();
             });
 
+            var swiper = new Swiper('.swiper-container', {
+                slidesPerView: 3,
+                spaceBetween: 30,
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                resizeReInit: true,
+            });
+            $(window).resize(function(){
+                var ww = $(window).width();
+                if (ww>1400) swiper.params.slidesPerView = 3;
+                if (ww<=1400) swiper.params.slidesPerView = 1;
+                swiper.update();
+            });
+            $(window).trigger('resize');
         </script>
     </body>
 </html>

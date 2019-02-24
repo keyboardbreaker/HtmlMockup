@@ -28,3 +28,5 @@ Form on the page should be completed by users in two steps. Clicking "Next" will
 [swiper.js](http://idangero.us/swiper/demos/)
 
 [adding viewport to project](https://www.w3schools.com/css/css_rwd_viewport.asp)
+
+[responsive swiper basede on window resize](https://github.com/nolimits4web/Swiper/issues/617)

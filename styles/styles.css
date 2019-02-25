@@ -186,6 +186,7 @@ input[type=text], input[type=tel], input[type=email]{
 	border: solid 1px grey;
     transition: border-width 0.6s linear;
     display:block;
+    margin: 0px 0px 10px 0;
 }
 
 input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus { border-width: 3px; }

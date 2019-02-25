@@ -53,7 +53,8 @@
                                 <input type="tel"
                                 placeholder="00123456789">
                                 <label><b>Email:</b></label>
-                                <input type="email">
+                                <input type="email"
+                                placeholder="you@example.com">
                                 <button type="submit" class="next nextbtn sbmt" required>Next</button>
                             </div>
                         </form>
@@ -70,10 +71,12 @@
             $(".next").click(function(){
                 $(".form1").hide();
                 $(".form2").show();
+                
             });
             $(".back").click(function(){
                 $(".form1").show();
                 $(".form2").hide();
+                
             });
 
             $(".sbmt").click(function(){

@@ -38,23 +38,25 @@
                 </div>
                 <div class="column">
                     <div class="form">
-                        <div><div class="back">Step 1</div> <div class="next">Step 2</div></div>
-                        <hr class="formhr">
-                        <div class="form1">
-                            <label><b>First name:</b></label>
-                            <input type="text">
-                            <label><b>Last name:</b></label>
-                            <input type="text">
-                            <button class="next nextbtn">Next</button>
-                        </div>
-                        <div class="form2">
-                            <label><b>Telephone number:</b></label>
-                            <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-                            required placeholder="0123456789">
-                            <label><b>Email:</b></label>
-                            <input type="email">
-                            <button class="next nextbtn">Next</button>
-                        </div>
+                        <form id="idForm">
+                            <div><div class="back">Step 1</div> <div class="next">Step 2</div></div>
+                            <hr class="formhr">
+                            <div class="form1">
+                                <label><b>First name:</b></label>
+                                <input type="text">
+                                <label><b>Last name:</b></label>
+                                <input type="text">
+                                <button class="next nextbtn">Next</button>
+                            </div>
+                            <div class="form2">
+                                <label><b>Telephone number:</b></label>
+                                <input type="tel"
+                                placeholder="00123456789">
+                                <label><b>Email:</b></label>
+                                <input type="email">
+                                <button type="submit" class="next nextbtn sbmt" required>Next</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -72,6 +74,26 @@
             $(".back").click(function(){
                 $(".form1").show();
                 $(".form2").hide();
+            });
+
+            $(".sbmt").click(function(){
+                $("#idForm").submit(function(e) {
+                    var form = $(this);
+                    var url = form.attr('action');
+                    $.ajax({
+                        type: "POST",
+                        url: url,
+                        data: form.serialize(), // serializes the form's elements.
+                        success: function(data){
+                            alert(data); // show response from the php script.
+                        },
+                        error: function (data) {
+                            console.log('An error occurred.');
+                            console.log(data);
+                        }
+                    });
+                    e.preventDefault(); // avoid to execute the actual submit of the form.
+                });
             });
 
             var swiper = new Swiper('.swiper-container', {

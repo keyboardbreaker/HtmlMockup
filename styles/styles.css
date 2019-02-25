@@ -103,6 +103,22 @@ hr{
     background-color:white;
     height:100%;
     text-align: left;
+    top: 100px;
+}
+
+.next, .back{
+    background-color: #717171;
+    color: white;
+    width: 100px;
+    text-align: center;
+    display: inline-block;
+    margin: 30px -4% 0px 5%;
+    height: 30px;
+    line-height: 30px
+}
+
+.formhr{
+    margin:3px 5% 0 5%;
 }
 
 .main{

@@ -34,3 +34,5 @@ Form on the page should be completed by users in two steps. Clicking "Next" will
 [changing the arrows for swiperjs](https://stackoverflow.com/questions/45381871/swiper-how-to-customise-arrow-buttons)
 
 [repositioning the arrows outside the swiper container](https://medium.com/@networkaaron/swiper-relocating-previous-and-next-buttons-1ae792f22ef)
+
+[vertical aligning div text](https://vanseodesign.com/css/vertical-centering/)

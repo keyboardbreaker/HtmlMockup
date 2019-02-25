@@ -17,7 +17,7 @@ body {
     padding: 0;
 }
 
-header{
+header {
     text-align: left;
     font-size: 2em;
     padding: 30px 0 10px 30px;
@@ -25,6 +25,23 @@ header{
 }
 
 /* GALLERY */
+.container {
+    background-color: #DDDDDD;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 20px 0 20px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.gallery {
+    display:flex;
+}
+
+.item {
+    flex:1;
+}
+
 .mobile-swiper-container {
     margin: 0% 5% 0 5%;
 }
@@ -34,7 +51,7 @@ header{
     height: 100%;
 }
 
-.swiper-wrapper{
+.swiper-wrapper {
     width:100%;
 }
 
@@ -78,36 +95,46 @@ header{
     opacity: 1 !important;
 }
 
-hr{
+hr {
     margin:40px 5% 0 5%;
 }
 
-.container{
-    background-color: #DDDDDD;
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0 20px 0 20px;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.gallery{
+/* Puzzle Picture and Form container */
+.main {
     display:flex;
+    width: 90%;
+    margin: 40px 5% 0 5%;
+    flex-flow:wrap;
+    justify-content: space-between;
 }
 
-.item{
-    flex:1;
-
+.column {
+    flex: 1 1 45%;
+    flex-direction:row;
+    margin: 0px 0 0 10px; 
 }
 
-.form{
+@media only screen and (max-width: 768px) { 
+    .column {
+        width: 100%;
+        margin: 10px 0 0 0;
+        flex: 1 1 100%;
+    }
+    img {
+        width:100%;
+    }
+}
+
+
+/* FORM */
+.form {
     background-color:white;
     height:100%;
     text-align: left;
     top: 100px;
 }
 
-.next, .back{
+.next, .back {
     background-color: #717171;
     color: white;
     width: 100px;
@@ -123,65 +150,11 @@ hr{
     background-color: #AAAAAA;
 }
 
-.formhr{
+.formhr {
     margin:3px 5% 0 5%;
 }
 
-.main{
-    display:flex;
-    width: 90%;
-    margin: 40px 5% 0 5%;
-    flex-flow:wrap;
-    justify-content: space-between;
-}
-
-.column{
-    flex: 1 1 45%;
-    flex-direction:row;
-    margin: 0px 0 0 10px; 
-}
-
-@media only screen and (max-width: 768px) { 
-    .column{
-        width: 100%;
-        margin: 10px 0 0 0;
-        flex: 1 1 100%;
-    }
-    img{
-        width:100%;
-    }
-}
-
-.pImg{
-    position:relative;
-    width:100%;
-    overflow:hidden;
-    margin:0; 
-}
-
-.pImg img{
-    display:block;
-    width:100%;
-    margin:-102.25% 0 -27.75%;
-    opacity: 0.5;
-    filter: alpha(opacity=50); /* For IE8 and earlier */
-}
-
-.overlay{
-    background-color:rgba(0, 0, 0, 0.5);
-    color: white;
-    position: absolute;
-    box-sizing: border-box;
-    bottom:0;
-    text-align:left;
-    padding: 20px;
-}
-
-footer{
-    font-size: 1.5em;
-}
-
-input[type=text], input[type=tel], input[type=email]{
+input[type=text], input[type=tel], input[type=email] {
     width: 60%;
 	border: solid 1px grey;
     transition: border-width 0.6s linear;
@@ -199,5 +172,38 @@ input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus { border-
     float: right;
     margin: 35px;
 }
+
+
+/* PUZZLE PICTURE */
+.pImg {
+    position:relative;
+    width:100%;
+    overflow:hidden;
+    margin:0; 
+}
+
+.pImg img {
+    display:block;
+    width:100%;
+    margin:-102.25% 0 -27.75%;
+    opacity: 0.5;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+
+.overlay {
+    background-color:rgba(0, 0, 0, 0.5);
+    color: white;
+    position: absolute;
+    box-sizing: border-box;
+    bottom:0;
+    text-align:left;
+    padding: 20px;
+}
+
+footer {
+    font-size: 1.5em;
+}
+
+
 
 

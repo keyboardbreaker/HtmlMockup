@@ -130,7 +130,7 @@ hr{
 .main{
     display:flex;
     width: 90%;
-    margin: 11px 5% 0 5%;
+    margin: 40px 5% 0 5%;
     flex-flow:wrap;
     justify-content: space-between;
 }

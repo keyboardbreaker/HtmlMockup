@@ -46,15 +46,15 @@
                                 <input type="text">
                                 <label><b>Last name:</b></label>
                                 <input type="text">
-                                <button class="next nextbtn">Next</button>
+                                <div class="next nextbtn">Next</div>
                             </div>
                             <div class="form2">
                                 <label><b>Telephone number:</b></label>
                                 <input type="tel"
-                                placeholder="00123456789">
+                                placeholder=" i.e: 0012-345-6789">
                                 <label><b>Email:</b></label>
                                 <input type="email"
-                                placeholder="you@example.com">
+                                placeholder=" i.e: you@example.com">
                                 <button type="submit" class="next nextbtn sbmt" required>Next</button>
                             </div>
                         </form>
@@ -71,12 +71,14 @@
             $(".next").click(function(){
                 $(".form1").hide();
                 $(".form2").show();
-                
+                $(".next").css('background-color',"#717171");
+                $(".back").css('background-color',"#AAAAAA");
             });
             $(".back").click(function(){
                 $(".form1").show();
                 $(".form2").hide();
-                
+                $(".back").css('background-color',"#717171");
+                $(".next").css('background-color',"#AAAAAA");
             });
 
             $(".sbmt").click(function(){
@@ -87,7 +89,7 @@
                         type: "POST",
                         url: url,
                         data: form.serialize(), // serializes the form's elements.
-                        success: function(data){
+                        success: function(data) {
                             alert(data); // show response from the php script.
                         },
                         error: function (data) {

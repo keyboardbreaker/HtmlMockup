@@ -24,6 +24,7 @@ header{
     /* border: 1px solid red; */
 }
 
+/* GALLERY */
 .mobile-swiper-container {
     margin: 0% 5% 0 5%;
 }
@@ -116,6 +117,10 @@ hr{
     height: 30px;
     line-height: 30px;
     cursor: pointer;
+}
+
+.next {
+    background-color: #AAAAAA;
 }
 
 .formhr{

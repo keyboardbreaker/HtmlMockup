@@ -60,7 +60,9 @@ header{
 .swiper-button-prev {
     border: solid black 1px;
     background-color: #524F4C;
-    height: 100px;
+    width: 40px !important;
+    height: 100px !important;
+    top: 34% !important;
 }
 .swiper-button-prev {
     background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%23FFFFFF'%2F%3E%3C%2Fsvg%3E") !important;
@@ -84,6 +86,8 @@ hr{
     font-family: Arial, Helvetica, sans-serif;
     margin: 0 20px 0 20px;
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .gallery{

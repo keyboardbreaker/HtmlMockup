@@ -3,6 +3,7 @@
     <head>
         <link rel="stylesheet" href="./styles/styles.css">
         <link rel="stylesheet" href="./styles/swiper.min.css">
+        <link rel="stylesheet" href="./styles/form.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
@@ -66,57 +67,7 @@
         </div>
         <script type="text/javascript" src="./scripts/swiper.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-        <script>
-            $(".form2").hide();
-            $(".next").click(function(){
-                $(".form1").hide();
-                $(".form2").show();
-                $(".next").css('background-color',"#717171");
-                $(".back").css('background-color',"#AAAAAA");
-            });
-            $(".back").click(function(){
-                $(".form1").show();
-                $(".form2").hide();
-                $(".back").css('background-color',"#717171");
-                $(".next").css('background-color',"#AAAAAA");
-            });
-
-            $(".sbmt").click(function(){
-                $("#idForm").submit(function(e) {
-                    var form = $(this);
-                    var url = form.attr('action');
-                    $.ajax({
-                        type: "POST",
-                        url: url,
-                        data: form.serialize(), // serializes the form's elements.
-                        success: function(data) {
-                            alert(data); // show response from the php script.
-                        },
-                        error: function (data) {
-                            console.log('An error occurred.');
-                            console.log(data);
-                        }
-                    });
-                    e.preventDefault(); // avoid to execute the actual submit of the form.
-                });
-            });
-
-            var swiper = new Swiper('.swiper-container', {
-                slidesPerView: 3,
-                spaceBetween: 30,
-                navigation: {
-                    nextEl: '.swiper-button-next',
-                    prevEl: '.swiper-button-prev',
-                },
-                resizeReInit: true,
-            });
-            $(window).resize(function(){
-                var ww = $(window).width();
-                if (ww>1400) swiper.params.slidesPerView = 3;
-                if (ww<=1400) swiper.params.slidesPerView = 1;
-                swiper.update();
-            });
-            $(window).trigger('resize');
-        </script>
+        <script type="text/javascript" src="./scripts/form.js"></script>
+        <script type="text/javascript" src="./scripts/swiper-responsive.js"></script>
     </body>
 </html>

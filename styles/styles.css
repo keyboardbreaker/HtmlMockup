@@ -114,7 +114,8 @@ hr{
     display: inline-block;
     margin: 30px -4% 0px 5%;
     height: 30px;
-    line-height: 30px
+    line-height: 30px;
+    cursor: pointer;
 }
 
 .formhr{
@@ -176,6 +177,7 @@ footer{
 }
 
 input[type=text]{
+    width: 60%;
 	background-color: #f2f2f2;
     border:1px solid #ccc;
 	-webkit-transition: all .2s ease-out;
@@ -200,4 +202,5 @@ input[type=text]:focus {
     float: right;
     margin: 35px;
 }
+
 

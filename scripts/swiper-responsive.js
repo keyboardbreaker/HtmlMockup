@@ -17,3 +17,14 @@ $(window).resize(function(){
     swiper.update();
 });
 $(window).trigger('resize');
+
+var swiper2 = new Swiper('#swiper-container2', {
+    direction: 'vertical',
+    slidesPerView: 'auto',
+    freeMode: true,
+    scrollbar: {
+        el: '.swiper-scrollbar',
+    },
+    mousewheel: true,
+});
+

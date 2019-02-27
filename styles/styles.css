@@ -36,6 +36,12 @@ header {
 
 .gallery {
     display:flex;
+    position: relative;
+}
+
+.swiper-btn {
+    position:absolute;
+    top:50%;
 }
 
 .item {
@@ -202,7 +208,5 @@ input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus { border-
 footer {
     font-size: 1.5em;
 }
-
-
 
 
